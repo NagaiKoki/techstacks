@@ -1,4 +1,5 @@
 import { FC, ReactNode } from "react";
+import styled from "@emotion/styled";
 
 import { Header } from "@/components/Header";
 
@@ -8,9 +9,14 @@ type Props = {
 
 export const Layout: FC<Props> = ({ children }) => {
   return (
-    <main>
+    <StyledMain>
       <Header />
       {children}
-    </main>
+    </StyledMain>
   );
 };
+
+const StyledMain = styled.main(({ theme }) => ({
+  margin: `0 auto`,
+  maxWidth: theme.width.maxWidth,
+}));

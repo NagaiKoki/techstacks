@@ -10,13 +10,17 @@ export const Header: FC = () => {
 };
 
 const StyledHeader = styled.header(({ theme }) => ({
-  color: theme.color.white,
+  display: "flex",
+  alignItems: "center",
+  borderBottom: `1px solid ${theme.color.gray[200]}`,
   width: theme.width["full"],
-  height: theme.height[64],
+  height: theme.height[48],
   padding: `${theme.padding[8]} ${theme.padding[16]}`,
+  color: theme.color.white,
 }));
 
 const StyledTitle = styled.span(({ theme }) => ({
   color: theme.color.black,
   fontSize: theme.fontSize[24],
+  fontWeight: "bold",
 }));

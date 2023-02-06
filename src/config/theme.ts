@@ -13,6 +13,7 @@ const pxValue = {
   "48": "48px",
   "64": "64px",
   "128": "128px",
+  maxWidth: "1000px",
   full: "100%",
 } as const;
 
