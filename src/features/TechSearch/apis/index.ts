@@ -1,0 +1,1 @@
+export { fetchTechIcons } from "./fetchTechIcons";

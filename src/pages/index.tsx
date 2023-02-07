@@ -1,6 +1,20 @@
-import Head from "next/head";
-import Image from "next/image";
+import { FC } from "react";
+import styled from "@emotion/styled";
 
-export default function Home() {
-  return <div>hoge</div>;
-}
+import { SearchTechForm } from "@/features/TechSearch/components/TechSearchForm";
+
+export const Home: FC = () => {
+  return (
+    <div>
+      <TechFormWrapper>
+        <SearchTechForm />
+      </TechFormWrapper>
+    </div>
+  );
+};
+
+export default Home;
+
+const TechFormWrapper = styled.div(({ theme }) => ({
+  marginTop: theme.margin[32],
+}));

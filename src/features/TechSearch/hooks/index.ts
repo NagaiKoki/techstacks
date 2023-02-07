@@ -1,0 +1,1 @@
+export { useSearchTech } from "./useSearchTech";

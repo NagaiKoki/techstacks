@@ -1,0 +1,1 @@
+export { SearchTechForm } from "./SearchTechForm";
