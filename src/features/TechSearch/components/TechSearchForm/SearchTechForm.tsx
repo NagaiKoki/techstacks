@@ -4,10 +4,12 @@ import styled from "@emotion/styled";
 import { TextInput } from "@/components/TextInput";
 import { useSearchTech } from "@/features/TechSearch/hooks";
 
+import styles from "./sample.module.css";
+
 export const SearchTechForm: FC = () => {
   const { keyword, onChangeKeyword } = useSearchTech();
   return (
-    <Wrapper>
+    <Wrapper className={styles.sample}>
       <TextInput
         placeholder="react"
         value={keyword}
